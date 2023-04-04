@@ -1,0 +1,24 @@
+<html>
+<body>
+<h1>JavaScript Classes</h1>
+<p>Creating two Mobile objects from a Mobile class:</p>
+
+<p id="demo"></p>
+
+<script>
+class Mobile {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+}
+
+const myMobile1 = new Mobile("Iphone", 2023);
+const myMobile2 = new Mobile("Samsung", 2020);
+
+document.getElementById("demo").innerHTML =
+myMobile1.name + " " + myMobile2.name;
+</script>
+
+</body>
+</html

@@ -1,0 +1,21 @@
+<p id="gfg">
+	Click the GfG button to see the result:
+</p>
+
+<form>
+	<input type="button" value="Click GfG" onclick="First();" />
+</form>
+<script type="text/javascript">
+	function First() {
+		var a = 123
+		var b = 456
+
+		try {
+			document.getElementById('gfg').innerHTML +=
+				'<br> Division of ' + a + ' by ' + b + ' = ' + a / b
+		}
+		catch (e) {
+		alert(e.description)
+		}
+	}
+</script>
